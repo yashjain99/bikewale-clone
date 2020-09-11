@@ -4,8 +4,51 @@
         <title>Bikewale</title>
         <style>
             .head-block {
-                width: 100%;
                 height: 490px;
+                background-image: url(https://imgd1.aeplcdn.com/0x0/bw/static/landing-banners/d/home-top-banner.jpg);
+                color: white;
+                /* background-size: contain;
+                background-repeat: no-repeat; */
+            }
+            .header {
+                height: 30px;
+                padding: 11px 20px;
+                background: transparent;
+                font-size: 15px;
+            }
+            .float-left {
+                float: left;
+            }
+            .float-right {
+                float: right;
+            }
+            .select-city-border {
+                border: 1px solid white;
+                border-radius: 5px;
+                margin-right: 20px;
+                padding: 5px;
+            }
+            .head-block-description {
+                margin: 30px;
+                font-size: 35px;
+                font-weight: bold;
+                color: white;
+            }
+            .head-block-description > div {
+                font-size: 20px;
+                font-weight: normal;
+            }
+            #search {
+                margin-top:50px;
+                height: 30px;
+                width: 450px;
+            }
+            #search + button {
+                height: 40px;
+                width: 100px;
+                font-size: 20px;
+
+                background-color: tomato;
             }
             .grid-block {
                 display: grid;
@@ -14,7 +57,7 @@
                 margin-right: 12%;
             }
             div {
-                font-family: system-ui;
+                font-family: Arial, Helvetica, sans-serif;
                 text-align: center;
             }
             div > p {
@@ -27,7 +70,36 @@
         </style>
     </head>
     <body>
-        <div class = "head-block border">
+        <div class = "head-block">
+            <div class = "header">
+                <div class = "float-left" >
+                    <img src="https://imgd.aeplcdn.com/0x0/bw/static/icons/fff/hamburger.svg" alt="Menu" class = "border">
+                    <img src = "https://imgd.aeplcdn.com/0x0/bw/static/icons/logo/fff/bikewale.svg" width = "100px" alt="Bikewale"/>
+                </div>
+                <div class = "float-right">
+                    <div class = "select-city float-left">
+                        <div class = "float-left select-city-border">
+                            Select City
+                        </div>
+                        <div class = "float-left" >
+                            <img src = "https://imgd.aeplcdn.com/0x0/cw/static/icons/svg/location-filled.svg" height = "15px" alt="Loaction"/>
+                        </div>
+                    </div>
+                    <div class = "float-left">
+                        Log in
+                    </div>
+                </div>
+            </div>
+            <div class = "head-block-description">
+                FIND THE RIGHT BIKE
+                <div><br/>
+                    Get Comprehensive Information on Bike Prices, Specs, Reviews & More!
+                </div>
+            </div>
+            <div>
+                <input type = "text" id = "search">
+                <button onclick = "" >Search</button>
+            </div>
 
         </div>
         <div>
