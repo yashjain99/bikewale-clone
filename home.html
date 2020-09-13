@@ -13,7 +13,6 @@
             .header {
                 height: 30px;
                 padding: 11px 20px;
-                background: transparent;
                 font-size: 15px;
             }
             .float-left {
@@ -47,14 +46,55 @@
                 height: 40px;
                 width: 100px;
                 font-size: 20px;
-
+                color: white;
                 background-color: tomato;
             }
-            .grid-block {
-                display: grid;
+            .browse-grid {
                 height: 350px;
                 margin-left: 12%;
                 margin-right: 12%;
+            }
+            .display-grid {
+                display: grid;
+            }
+            .display-browse-bikes-menu {
+                grid-template-columns: auto auto auto auto;
+                grid-template-rows: 20px;
+                padding: 10px;
+                color: #4d5057;
+                border-bottom: 1px solid #ccc;
+            }
+            /* .browse-bike-divs:focus {
+                color: black;
+                border-bottom: 2px solid tomato;
+            } */
+            .display-browse-bikes-contents {
+                grid-template-columns: auto auto auto auto auto;
+                grid-template-rows: 120px 120px;
+            }
+            .view-more-button {
+                color: lightseagreen;
+                background-color: white;
+                border: 1px solid lightseagreen;
+                font-size: 15px;
+                width: 140px;
+                margin: 20px;
+                padding: 5px 7px;
+            }
+            .view-more-button:hover {
+                color: white;
+                background-color: lightseagreen;
+            }
+            .display-grid-three {
+                grid-template-columns: auto auto auto;
+                grid-template-rows: 20px;
+                padding: 10px;
+                color: #4d5057;
+                border-bottom: 1px solid #ccc;
+            }
+            .display-grid-three-contents {
+                grid-template-columns: auto auto;
+                grid-template-rows: auto;
             }
             div {
                 font-family: Arial, Helvetica, sans-serif;
@@ -73,12 +113,12 @@
         <div class = "head-block">
             <div class = "header">
                 <div class = "float-left" >
-                    <img src="https://imgd.aeplcdn.com/0x0/bw/static/icons/fff/hamburger.svg" alt="Menu" class = "border">
+                    <img src="https://imgd.aeplcdn.com/0x0/bw/static/icons/fff/hamburger.svg" alt="Menu" >
                     <img src = "https://imgd.aeplcdn.com/0x0/bw/static/icons/logo/fff/bikewale.svg" width = "100px" alt="Bikewale"/>
                 </div>
                 <div class = "float-right">
-                    <div class = "select-city float-left">
-                        <div class = "float-left select-city-border">
+                    <div class = "select-city float-left select-city-border">
+                        <div class = "float-left ">
                             Select City
                         </div>
                         <div class = "float-left" >
@@ -107,16 +147,55 @@
                 Browse bikes by
             </h2>
         </div>
-        <div class = "grid-block border">
+        <div class = "browse-grid border">
+            <div class = "display-grid display-browse-bikes-menu">
+                <div class = "browse-bike-divs">Brand</div>
+                <div class = "browse-bike-divs">Budget</div>
+                <div class = "browse-bike-divs">Displacement</div>
+                <div class = "browse-bike-divs">Style</div>
+            </div>
+            <div class = "display-grid display-browse-bikes-contents border">
+                <div>
 
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <button onclick = "" class = "view-more-button">View more brands</button>
         </div>
         <div>
             <h2>
                 Featured bikes
             </h2>
         </div>
-        <div class = "grid-block border">
+        <div class = "browse-grid border">
+            <div class = "display-grid display-grid-three">
+                <div class = "browse-bike-divs">Most Popular</div>
+                <div class = "browse-bike-divs">New launches</div>
+                <div class = "browse-bike-divs">Upcoming</div>  
+            </div>
+            <div class = "display-grid display-browse-bikes-contents border">
+                <div>
 
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <button onclick = "" class = "view-more-button ">View all bikes</button>
         </div>
     </body>
 </html>
