@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <title>Bikewale-Home Page</title>
+        <link type = "text/css" rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div class = "background-image">
+            
+                    <!-- NAV BAR -->
+            
+            <div class = "display-flex navbar">
+                <div class="left-section display-flex">
+                    <img src="https://imgd.aeplcdn.com/0x0/bw/static/icons/fff/hamburger.svg" alt="Menu" style = "margin-left: 15px; cursor: pointer;">
+                    <a href="index.html" style="color: white;text-decoration: none;">
+                    <img src = "https://imgd.aeplcdn.com/0x0/bw/static/icons/logo/fff/bikewale.svg" width = "100px" alt="Bikewale" style = "margin-left: 10px; cursor: pointer;"/>
+                    </a>  
+                </div>
+                  <div class="right-section display-flex">
+                    <div class = "border-radius border cursor-pointer">Select City <img src = "https://imgd.aeplcdn.com/0x0/cw/static/icons/svg/location-filled.svg" height = "15px" alt="Loaction"/> </div>
+                    <div style = "margin-left: 20px; margin-right: 30px;" class = "cursor-pointer"><a href="login.html" style="color: white;text-decoration: none;">Log in</a></div>
+                  </div>
+            </div>
+            
+                    <!-- HEAD BLOCK DESCRIPTION AND SEARCH BOX -->
+        
+            <div class = "head-block-description">
+                FIND THE RIGHT BIKE
+                <div><br/>
+                    Get Comprehensive Information on Bike Prices, Specs, Reviews & More!
+                </div>
+                <div class = "display-flex search-container">
+                    <input id = "search" placeholder = "Search your bike here, e.g. Maestro Edge"></input>
+                    <div class = "cursor-pointer">Search</div> 
+                </div>
+            </div>
+        </div>
+
+                    <!-- BROWSE BY BIKE -->
+
+        <div class = "text-align-center">
+            <h2>
+                Browse bikes by
+            </h2>
+        </div>
+        <div class = "browse-grid text-align-center">
+            <div class = "display-grid display-browse-bikes-menu">
+                <div class = "browse-bike-divs cursor-pointer border-bottom">Brand</div>
+                <div class = "browse-bike-divs cursor-pointer">Budget</div>
+                <div class = "browse-bike-divs cursor-pointer">Displacement</div>
+                <div class = "browse-bike-divs cursor-pointer">Style</div>
+            </div>
+            <div class = "display-grid display-browse-bikes-contents">
+                <div class = "cursor-pointer">
+                    <a href="products.html" style="text-decoration: none;">
+                    <img src = "https://www.logo-designer.co/wp-content/uploads/2014/06/Royal-Enfield-Logo-Design-Crest-Monogram-motorbikes-livery.jpg" alt = "Bikewale-Image"/>
+                    <div>Royal Enfield</div>
+                    </a>
+                </div>
+                <div class = "cursor-pointer">
+                    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRh0FQm-L26PRctdy7oI8msFYHu4DrgJkW1kg&usqp=CAU" alt = "Bikewale-Image"/>
+                    <div>Honda</div>
+                </div>
+                <div class = "cursor-pointer">
+                    <img src = "https://1000logos.net/wp-content/uploads/2020/06/Hero-Logo.png" alt = "Bikewale-Image"/>
+                    <div>Hero</div>
+                </div>
+                <div class = "cursor-pointer">
+                    <img src = "https://www.autopunditz.com/wp-content/uploads/2020/06/1-2.jpg" alt = "Bikewale-Image"/>
+                    <div>Bajaj</div>
+                </div>
+                <div class = "cursor-pointer">
+                    <img src = "https://getvectorlogo.com/wp-content/uploads/2018/12/tvs-motor-company-vector-logo.png" alt = "Bikewale-Image"/>
+                    <div>TVS</div>
+                </div>
+                <div class = "cursor-pointer">
+                    <img src = "https://seekvectorlogo.com/wp-content/uploads/2018/03/yamaha-motor-corporation-vector-logo.png" alt = "Bikewale-Image"/>
+                    <div>Yamaha</div>
+                </div>
+                <div class = "cursor-pointer">
+                    <img src = "data:image/png;base64,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" alt = "Bikewale-Image"/>
+                    <div>Suzuki</div>
+                </div>
+                <div class = "cursor-pointer">
+                    <img src = "https://seekvectorlogo.com/wp-content/uploads/2018/03/ktm-sportmotorcycle-vector-logo.png" alt = "Bikewale-Image"/>
+                    <div>KTM</div>
+                </div>
+                <div class = "cursor-pointer">
+                    <img src = "https://www.charzer.com/edited-image/client-2-color.png" alt = "Bikewale-Image"/>
+                    <div>Hero Electric</div>
+                </div>
+                <div class = "cursor-pointer">
+                    <img src = "https://seeklogo.com/images/J/Jawa-logo-A3A25AEBC6-seeklogo.com.png" alt = "Bikewale-Image"/>
+                    <div>Jawa</div>
+                </div>
+            </div>
+            <button class = "view-more-button">View more brands</button>
+        </div>
+
+                <!-- FEATURED BIKES -->
+
+        <div class = "text-align-center">
+            <h2>
+                Featured bikes
+            </h2>
+        </div>
+        <div class = "features-grid text-align-center ">
+            <div class = "display-grid display-grid-three ">
+                <div class = "browse-bike-divs cursor-pointer border-bottom">Most Popular</div>
+                <div class = "browse-bike-divs cursor-pointer">New launches</div>
+                <div class = "browse-bike-divs cursor-pointer">Upcoming</div>  
+            </div>
+            <div class = "display-grid display-grid-three-contents ">
+                <div class = " feature-1">
+                    <img src = "https://imgd.aeplcdn.com/310x174/bw/models/husqvarna-svartpilen-250-standard20200225140010.jpg?q=75" alt="Image" class = "cursor-pointer">
+                    <div>
+                        <br/>
+                        <div class = "cursor-pointer bike-name">Husqvarna Svartpilen 250</div>
+                        <br/>
+                        <div class = "bike-specs">249 cc, 31.85 kmpl, 29bhp, 166kg</div>
+                        <br/>
+                        <div class = "bike-avg">Avg. Ex-showroom price</div>
+                        <br/>
+                        <div class = "bike-price">₹ 1,84,941 onwards</div>
+                    </div>
+                    <br/>
+                    <div class = "check-on-road-price text-align-center cursor-pointer">Check on-road price</div>
+                </div>
+                <div class = " feature-1">
+                    <img src = "https://imgd.aeplcdn.com/310x174/bw/models/husqvarna-vitpilen-250-standard20200225140033.jpg?q=75" alt="Image" class = "cursor-pointer">
+                    <div>
+                        <br/>
+                        <div class = "cursor-pointer bike-name">Husqvarna Vitpilen 250</div>
+                        <br/>
+                        <div class = "bike-specs">249 cc, 31.85 kmpl, 29bhp, 166kg</div>
+                        <br/>
+                        <div class = "bike-avg">Avg. Ex-showroom price</div>
+                        <br/>
+                        <div class = "bike-price">₹ 1,84,941 onwards</div>
+                    </div>
+                    <br/>
+                    <div class = "check-on-road-price text-align-center cursor-pointer">Check on-road price</div>
+                </div>
+                <div class = " feature-1">
+                    <img src = "https://imgd.aeplcdn.com/310x174/bw/models/royal-enfield-classic-350-bs-vi-efi20200108130246.jpg?q=75" alt="Image" class = "cursor-pointer">
+                    <div>
+                        <br/>
+                        <div class = "cursor-pointer bike-name">Royal Enfield Classic 350</div>
+                        <br/>
+                        <div class = "bike-specs">346 cc, 19.1 bhp, 195kg</div>
+                        <br/>
+                        <div class = "bike-avg">Avg. Ex-showroom price</div>
+                        <br/>
+                        <div class = "bike-price">₹ 1,61,553 onwards</div>
+                    </div>
+                    <br/>
+                    <div class = "check-on-road-price text-align-center cursor-pointer">Check on-road price</div>
+                </div>
+            </div>
+            <button class = "view-more-button">View all bikes</button>
+        </div>
+
+        <!-- ON ROAD PRICE ENQUIRY -->  
+
+        <div class = "on-road-price-enquiry-block">
+            <div class = "display-grid enquiry-form ">
+                <div style = "font-size: 25px; font-weight: bold;" >On-road price</div>
+                <input type = "text" placeholder = "Search Make and Model" id = "road-enquiry-input"></input>
+                <select id = "select-city">
+                    <option>--Select city--</option>
+                    <option>Delhi</option>
+                    <option>Mumbai</option>
+                    <option>Gurgaon</option>
+                    <option>Banglore</option>
+                </select>
+                <div class = "enquiry-check-button text-align-center cursor-pointer">Check on-road price</div>
+                <div class = "disclaimer">Its private, no need to share your number and email</div>
+            </div>
+        </div>
+
+        <!-- BEST BIKES OF SEPTEMBER 2020 -->
+
+        <div class = "text-align-center">
+            <h2>
+                Best bikes of September 2020
+            </h2>
+        </div>
+        <div class = "features-grid text-align-center ">
+            <div class = "display-grid display-grid-five ">
+                <div class = "browse-bike-divs cursor-pointer border-bottom">Scooters</div>
+                <div class = "browse-bike-divs cursor-pointer">Mileage Bikes</div>
+                <div class = "browse-bike-divs cursor-pointer">Sports</div>  
+                <div class = "browse-bike-divs cursor-pointer">Cruizers</div>  
+                <div class = "browse-bike-divs cursor-pointer">Electric bikes</div>  
+            </div>
+            <div class = "display-grid display-grid-three-contents ">
+                <div class = " feature-1">
+                    <img src = "https://imgd.aeplcdn.com/310x174/bw/models/honda-activa-6g-standard20200115132249.jpg?q=75" alt="Image" class = "cursor-pointer">
+                    <div>
+                        <br/>
+                        <div class = "cursor-pointer bike-name">Honda Activa 6G</div>
+                        <br/>
+                        <div class = "bike-specs">109.51 cc 7.68 bhp, 107kg</div>
+                        <br/>
+                        <div class = "bike-avg">Avg. Ex-showroom price</div>
+                        <br/>
+                        <div class = "bike-price">₹ 66,864 onwards</div>
+                    </div>
+                    <br/>
+                    <div class = "check-on-road-price text-align-center cursor-pointer">Check on-road price</div>
+                </div>
+                <div class = " feature-1">
+                    <img src = "https://imgd.aeplcdn.com/310x174/bw/models/honda-dio-std20190722180713.jpg?q=75" alt="Image" class = "cursor-pointer">
+                    <div>
+                        <br/>
+                        <div class = "cursor-pointer bike-name">Honda Dio</div>
+                        <br/>
+                        <div class = "bike-specs">109.51 cc 7.65 bhp, 105kg</div>
+                        <br/>
+                        <div class = "bike-avg">Avg. Ex-showroom price</div>
+                        <br/>
+                        <div class = "bike-price">₹ 65,418 onwards</div>
+                    </div>
+                    <br/>
+                    <div class = "check-on-road-price text-align-center cursor-pointer">Check on-road price</div>
+                </div>
+                <div class = " feature-1">
+                    <img src = "https://imgd.aeplcdn.com/310x174/bw/models/suzuki-access-125-steel-wheel--drum--cbs-bs-vi20200106120649.jpg?q=75" alt="Image" class = "cursor-pointer">
+                    <div>
+                        <br/>
+                        <div class = "cursor-pointer bike-name">Suzuki Access 125</div>
+                        <br/>
+                        <div class = "bike-specs">124 cc 8.6 bhp, 104kg</div>
+                        <br/>
+                        <div class = "bike-avg">Avg. Ex-showroom price</div>
+                        <br/>
+                        <div class = "bike-price">₹ 71,311 onwards</div>
+                    </div>
+                    <br/>
+                    <div class = "check-on-road-price text-align-center cursor-pointer">Check on-road price</div>
+                </div>
+            </div>
+            <button class = "view-more-button">View complete list</button>
+        </div>
+
+        <!-- POPULAR SERIES -->
+
+        <div class = "text-align-center">
+            <h2>
+                Popular Series
+            </h2>
+        </div>
+        <div class = "display-grid popular-container">
+            <div id = "popular-1" class = "borde">
+                <img src="https://imgd.aeplcdn.com/210x118/bw/models/honda-activa-6g-standard20200115132249.jpg" alt="IMAGE" class = "float-left">
+                <div class = "float-left">
+                    <div style="font-weight: bold;">Honda Activa</div>
+                    <div class = "bike-avg">2 models available</div><br/>
+                    <div class = "bike-price">₹ 67,041 onwards</div>
+                    <button class = "view-more-button">View all bikes</button>
+                </div>
+            </div>
+            <div id = "popular-2">
+                <img src="https://imgd.aeplcdn.com/210x118/bw/models/hero-splendor-ismart-110.jpg?20190103151915" alt="IMAGE" class = "float-left">
+                <div class = "float-left">
+                    <div style="font-weight: bold;">Hero Splendor</div>
+                    <div class = "bike-avg">3 models available</div><br/>
+                    <div class = "bike-price">₹ 60,516 onwards</div>
+                    <button class = "view-more-button">View all bikes</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMPARE BIKES -->
+
+        <div class = "text-align-center">
+            <h2>
+                Compare Bikes
+            </h2>
+        </div>
+        <div class = "display-grid compare-bike-container">
+            <div class = " compare-1">
+                <div class = " float-left">
+                    <img src = "https://imgd.aeplcdn.com/310x174/bw/models/husqvarna-vitpilen-250-standard20200225140033.jpg?q=75" alt="Image" class = "cursor-pointer" style = "width: 80%;">
+                </div>
+                <div class = "clear-both">
+                    <br/>
+                    <div class = "cursor-pointer bike-name">Husqvarna Vitpilen 250</div>
+                    <br/>
+                    <div class = "bike-avg">Avg. Ex-showroom price</div>
+                    <br/>
+                    <div class = "bike-price">₹ 1,84,941 onwards</div>
+                </div>
+                <br/>
+            </div>
+            <div class = " compare-2">
+                <div class = "compare-vs-image float-left"></div>
+                <img src = "https://imgd.aeplcdn.com/310x174/bw/models/royal-enfield-classic-350-bs-vi-efi20200108130246.jpg?q=75" alt="Image" class = "cursor-pointer" style = "width: 80%; margin-left: 5%;">
+                <div>
+                    <br/>
+                    <div class = "cursor-pointer bike-name">Royal Enfield Classic 350</div>
+                    <br/>
+                    <div class = "bike-avg">Avg. Ex-showroom price</div>
+                    <br/>
+                    <div class = "bike-price">₹ 1,61,553 onwards</div>
+                </div>
+                <br/>
+            </div>
+            <div class = " compare-3">
+                <div class = " float-left">
+                    <img src = "https://imgd.aeplcdn.com/310x174/bw/models/honda-dio-std20190722180713.jpg?q=75" alt="Image" class = "cursor-pointer" style = "width: 80%;">
+                </div>
+                <div class = "clear-both">
+                    <br/>
+                    <div class = "cursor-pointer bike-name">Honda Dio</div>
+                    <br/>
+                    <div class = "bike-avg">Avg. Ex-showroom price</div>
+                    <br/>
+                    <div class = "bike-price">₹ 65,418 onwards</div>
+                </div>
+                <br/>
+            </div>
+            <div class = " compare-4">
+                <div class = "compare-vs-image float-left"></div>
+                <img src = "https://imgd.aeplcdn.com/310x174/bw/models/suzuki-access-125-steel-wheel--drum--cbs-bs-vi20200106120649.jpg?q=75" alt="Image" class = "cursor-pointer" style = "width: 80%; margin-left: 5%;">
+                <div>
+                    <br/>
+                    <div class = "cursor-pointer bike-name">Suzuki Access 125</div>
+                    <br/>
+                    <div class = "bike-avg">Avg. Ex-showroom price</div>
+                    <br/>
+                    <div class = "bike-price">₹ 71,311 onwards</div>
+                </div>
+                <br/>
+            </div>
+            <div id = "compare-btn-1">
+                <div class = "compare-now-button text-align-center cursor-pointer">Compare Now</div>
+            </div> 
+            <div id = "compare-btn-2">
+                <div class = "compare-now-button text-align-center cursor-pointer">Compare Now</div>
+            </div>
+        </div>
+        
+        <!-- USER REVIEWS-->
+
+        <div class = "text-align-center">
+            <h2>
+                User Reviews
+            </h2>
+        </div>
+        <div class = "features-grid">
+            <div class = "text-align-center user-reviews-font" style = "padding: 15px;">3000+ unbiased, verified reviews from bike owners. Know the pros and cons of 200+ bike models from real owners.</div>
+            <div class = "display-flex search-container" style = "margin-top: 5px;;">
+                <input id = "search" placeholder = "Search bike e.g. Dominar 400"></input>
+                <div class = "cursor-pointer text-align-center" style = "color: white; font-size: 15px; width: 130px">Read reviews</div> 
+            </div>
+            <div class = "text-align-center" style = "font-weight: bold; margin-top: 30px">Recently added reviews</div>
+            <div class = "display-grid display-grid-three-contents ">
+                <div class = " feature-1" style = "padding-top: 10px; margin-bottom: 30px;">
+                    <div>
+                        <div>
+                            <img src="https://imgd.aeplcdn.com/0x0/bw/static/icons/john-doe-30x36.png" alt="User" style = "margin-left: 45%;">
+                        </div>
+                        <br/>
+                        <div class = "bike-specs text-align-center">Anindya Bera</div>
+                        <br/>
+                        <div class = "bike-specs text-align-center">
+                        <img src = "https://lh3.googleusercontent.com/proxy/uHh4z3xeZ_R8fFe0IQVDt-LYDDolxQtXS63dHnFmajJxq2_sGqoXUmW1LvB5qQPkCmZi8vMcAqxmw9o657v5XjvC-pw_FePaW1cz7-wJOCrXTiM2nOM9XNBj-gPq" alt="Review" class = "user-reviews-star">
+                        </div>
+                        <br/>
+                        <div class = "bike-name text-align-center">Hero Maestro Edge 125</div>
+                        <br/>
+                        <div class = "bike-avg text-align-center">Self start does not work properly.<br/>its is very much...</div>
+                        <br/>
+                        <div class = "bike-specs text-align-center">5 hours ago</div>
+                    </div>
+                    <br/>
+                    <div class = "cursor-pointer bike-name" style = "color: #029ae0; text-decoration-color: #029ae0; text-align: center;">Read full review</div>
+                </div>
+                <div class = " feature-1" style = "padding-top: 10px; margin-bottom: 30px;">
+                    <div>
+                        <div>
+                            <img src="https://imgd.aeplcdn.com/0x0/bw/static/icons/john-doe-30x36.png" alt="User" style = "margin-left: 45%;">
+                        </div>
+                        <br/>
+                        <div class = "bike-specs text-align-center">Anindya Bera</div>
+                        <br/>
+                        <div class = "bike-specs text-align-center">
+                            <img src = "https://lh3.googleusercontent.com/proxy/uHh4z3xeZ_R8fFe0IQVDt-LYDDolxQtXS63dHnFmajJxq2_sGqoXUmW1LvB5qQPkCmZi8vMcAqxmw9o657v5XjvC-pw_FePaW1cz7-wJOCrXTiM2nOM9XNBj-gPq" alt="Review" class = "user-reviews-star">
+                            <img src = "https://lh3.googleusercontent.com/proxy/uHh4z3xeZ_R8fFe0IQVDt-LYDDolxQtXS63dHnFmajJxq2_sGqoXUmW1LvB5qQPkCmZi8vMcAqxmw9o657v5XjvC-pw_FePaW1cz7-wJOCrXTiM2nOM9XNBj-gPq" alt="Review" class = "user-reviews-star">
+                        </div>
+                        <br/>
+                        <div class = "bike-name text-align-center">Hero Maestro Edge 125</div>
+                        <br/>
+                        <div class = "bike-avg text-align-center">Self start does not work properly.<br/>its is very much...</div>
+                        <br/>
+                        <div class = "bike-specs text-align-center">5 hours ago</div>
+                    </div>
+                    <br/>
+                    <div class = "cursor-pointer bike-name" style = "color: #029ae0; text-decoration-color: #029ae0; text-align: center;">Read full review</div>
+                </div>
+                <div class = " feature-1" style = "padding-top: 15px; margin-bottom: 30px;">
+                    <div>
+                        <div>
+                            <img src="https://imgd.aeplcdn.com/0x0/bw/static/icons/john-doe-30x36.png" alt="User" style = "margin-left: 45%;">
+                        </div>
+                        <br/>
+                        <div class = "bike-specs text-align-center">Anindya Bera</div>
+                        <br/>
+                        <div class = "bike-specs text-align-center">
+                            <img src = "https://lh3.googleusercontent.com/proxy/uHh4z3xeZ_R8fFe0IQVDt-LYDDolxQtXS63dHnFmajJxq2_sGqoXUmW1LvB5qQPkCmZi8vMcAqxmw9o657v5XjvC-pw_FePaW1cz7-wJOCrXTiM2nOM9XNBj-gPq" alt="Review" class = "user-reviews-star">
+                            <img src = "https://lh3.googleusercontent.com/proxy/uHh4z3xeZ_R8fFe0IQVDt-LYDDolxQtXS63dHnFmajJxq2_sGqoXUmW1LvB5qQPkCmZi8vMcAqxmw9o657v5XjvC-pw_FePaW1cz7-wJOCrXTiM2nOM9XNBj-gPq" alt="Review" class = "user-reviews-star">
+                            <img src = "https://lh3.googleusercontent.com/proxy/uHh4z3xeZ_R8fFe0IQVDt-LYDDolxQtXS63dHnFmajJxq2_sGqoXUmW1LvB5qQPkCmZi8vMcAqxmw9o657v5XjvC-pw_FePaW1cz7-wJOCrXTiM2nOM9XNBj-gPq" alt="Review" class = "user-reviews-star">
+                        </div>
+                        <br/>
+                        <div class = "bike-name text-align-center">Hero Maestro Edge 125</div>
+                        <br/>
+                        <div class = "bike-avg text-align-center">Self start does not work properly.<br/>its is very much...</div>
+                        <br/>
+                        <div class = "bike-specs text-align-center">5 hours ago</div>
+                    </div>
+                    <br/>
+                    <div class = "cursor-pointer bike-name" style = "color: #029ae0; text-decoration-color: #029ae0; text-align: center;">Read full review</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FIND SECOND-HAND BIKES -->
+
+        <div class = "text-align-center">
+            <h2>
+                Find second-hand bikes
+            </h2>
+        </div>
+        <div class = "features-grid text-align-center" style = "height: 400px;">
+            <div class = "display-grid display-grid-three ">
+                <div class = "browse-bike-divs cursor-pointer border-bottom">Model</div>
+                <div class = "browse-bike-divs cursor-pointer">City</div>
+                <div class = "browse-bike-divs cursor-pointer">Budget</div>  
+            </div>
+            <div class = "display-grid display-grid-three-contents" style = "height: 260px;">
+                <div class = " feature-1" style = "height: 250px;">
+                    <img src = "https://imgd.aeplcdn.com/310x174/n/bw/used/modelimages/bajaj-pulsar-150-1490034225970.jpg?20190103151915&q=75" alt="Image" class = "cursor-pointer">
+                    <div>
+                        <br/>
+                        <div class = "cursor-pointer bike-name">Used Bajaj Pulsar 150</div>
+                        <br/>
+                        <div class = "bike-specs">90 Used bikes available</div>
+                        <br/>
+                        <div class = "bike-price">₹ 8,000 onwards</div>
+                    </div>
+                    <br/>
+                </div>
+                <div class = " feature-1" style = "height: 250px;">
+                    <img src = "https://imgd.aeplcdn.com/310x174/n/bw/used/modelimages/royal-enfield-classic-350-1490035988679.jpg?20190103151915&q=75" alt="Image" class = "cursor-pointer">
+                    <div>
+                        <br/>
+                        <div class = "cursor-pointer bike-name" style = "margin-left: 5%;">Used Royal Enfield Classic 350</div>
+                        <br/>
+                        <div class = "bike-specs" style = "margin-left: 5%;">90 Used bikes available</div>
+                        <br/>
+                        <div class = "bike-price" style = "margin-left: 5%;">₹ 80,000 onwards</div>
+                    </div>
+                    <br/>
+                </div>
+                <div class = " feature-1" style = "height: 250px;">
+                    <img src = "https://imgd.aeplcdn.com/310x174/n/bw/used/modelimages/royal-enfield-thunderbird-350-1490036010550.jpg?20190103151915&q=75" alt="Image" class = "cursor-pointer">
+                    <div>
+                        <br/>
+                        <div class = "cursor-pointer bike-name" style = "margin-left: 5%;">Royal royal-enfield-thunderbird...</div>
+                        <br/>
+                        <div class = "bike-specs" style = "margin-left: 5%;">64 Used bikes available</div>
+                        <br/>
+                        <div class = "bike-price" style = "margin-left: 5%;">₹ 50,553 onwards</div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+            <button class = "view-more-button" style = "width: 150px;">View all used bikes</button>
+        </div>
+        
+        <!-- LATEST UPDATE BIKE HISTORY -->
+
+        <div class = "text-align-center">
+            <h2>
+                Latest update bike history
+            </h2>
+        </div>
+        <div class = "features-grid text-align-center">
+            <div class = "display-grid display-grid-three ">
+                <div class = "browse-bike-divs cursor-pointer border-bottom">Model</div>
+                <div class = "browse-bike-divs cursor-pointer">City</div>
+                <div class = "browse-bike-divs cursor-pointer">Budget</div>  
+            </div>
+            <div class = "display-grid display-grid-three-contents ">
+                <div class = " feature-1">
+                    <img src = "https://imgd.aeplcdn.com/310x174/bw/models/husqvarna-svartpilen-250-standard20200225140010.jpg?q=75" alt="Image" class = "cursor-pointer">
+                    <div>
+                        <br/>
+                        <div class = "cursor-pointer bike-name">Husqvarna Svartpilen 250</div>
+                        <br/>
+                        <div class = "bike-specs">249 cc, 31.85 kmpl, 29bhp, 166kg</div>
+                        <br/>
+                        <div class = "bike-avg">Avg. Ex-showroom price</div>
+                        <br/>
+                        <div class = "bike-price">₹ 1,84,941 onwards</div>
+                    </div>
+                    <br/>
+                    <div class = "check-on-road-price text-align-center cursor-pointer">Check on-road price</div>
+                </div>
+                <div class = " feature-1">
+                    <img src = "https://imgd.aeplcdn.com/310x174/bw/models/husqvarna-vitpilen-250-standard20200225140033.jpg?q=75" alt="Image" class = "cursor-pointer">
+                    <div>
+                        <br/>
+                        <div class = "cursor-pointer bike-name">Husqvarna Vitpilen 250</div>
+                        <br/>
+                        <div class = "bike-specs">249 cc, 31.85 kmpl, 29bhp, 166kg</div>
+                        <br/>
+                        <div class = "bike-avg">Avg. Ex-showroom price</div>
+                        <br/>
+                        <div class = "bike-price">₹ 1,84,941 onwards</div>
+                    </div>
+                    <br/>
+                    <div class = "check-on-road-price text-align-center cursor-pointer">Check on-road price</div>
+                </div>
+                <div class = " feature-1">
+                    <img src = "https://imgd.aeplcdn.com/310x174/bw/models/royal-enfield-classic-350-bs-vi-efi20200108130246.jpg?q=75" alt="Image" class = "cursor-pointer">
+                    <div>
+                        <br/>
+                        <div class = "cursor-pointer bike-name">Royal Enfield Classic 350</div>
+                        <br/>
+                        <div class = "bike-specs">346 cc, 19.1 bhp, 195kg</div>
+                        <br/>
+                        <div class = "bike-avg">Avg. Ex-showroom price</div>
+                        <br/>
+                        <div class = "bike-price">₹ 1,61,553 onwards</div>
+                    </div>
+                    <br/>
+                    <div class = "check-on-road-price text-align-center cursor-pointer">Check on-road price</div>
+                </div>
+            </div>
+            <button class = "view-more-button">View all bikes</button>
+        </div>
+
+        <!-- Footer -->
+
+        <div class = "footer" style = "padding-top: 10px;">
+            <div class = "display-flex search-container" style="margin-bottom: 30px;">
+                <input id = "search" placeholder = "Search your bike here, e.g. Maestro Edge"></input>
+                <div class = "cursor-pointer text-align-center">Search</div> 
+            </div>
+            <div class = "display-flex footer-border">
+                <img src = "https://imgd.aeplcdn.com/0x0/bw/static/icons/logo/fff/bikewale.svg">
+                <img src = "https://imgd.aeplcdn.com/0x0/bw/static/icons/logo/fff/bikewale.svg">
+                <img src = "https://imgd.aeplcdn.com/0x0/bw/static/icons/logo/fff/bikewale.svg">
+            </div>
+            <div class = "display-flex" style="padding-bottom: 20px;">
+                <div class = "footer-copyright" style = "margin-left: 10%;">© BikeWale India</div>
+                <div class = "footer-copyright" style = "margin-left: 54%;">Visitor Agreement & Privacy Policy</div>
+            </div>
+        </div>
+
+    </body>
+</html>
